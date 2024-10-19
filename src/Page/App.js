@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <Router basename="/last">
+    <Router >
       <Nav /> {/* Navigation component */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Home route */}
