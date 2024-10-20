@@ -9,7 +9,7 @@ function Footer() {
 
         try {
           // Send the email address to the backend
-          const response = await axios.post(`https://adiz-50022731878.development.catalystappsail.in/subscribe`, { email },{  headers: {
+          const response = await axios.post(`https://backend-production-5c23.up.railway.app/subscribe`, { email },{  headers: {
             'Content-Type': 'application/json',
           },});
     
