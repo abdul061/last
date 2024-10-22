@@ -5,14 +5,14 @@ import Work from "./Work";
 import Footer from "./components/Footer";
 import Service from "./Service";
 import Contact from "./Contact";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 // Import your Work component
 // Import your Services component
 // Import your Contact component
 
 const App = () => {
   return (
-    <Router >
+    <div className="app">
       <Nav /> {/* Navigation component */}
       <Routes>
         <Route path="/" element={<Home />} /> {/* Home route */}
@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </Router>
+    </div>
   );
 };
 
