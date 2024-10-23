@@ -5274,3 +5274,9 @@ figcaption {
     grid-area: 5 / 1 / 6 / 2;
   }
 }
+.crt1{
+  background-color: #fff;
+  max-height: 5%;
+  padding: 50px 5%;
+  position: relative;
+}
