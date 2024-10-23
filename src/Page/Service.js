@@ -296,7 +296,7 @@ const Service = () => {
 
         <Banner />
 
-        <div className="udesly-section">
+
           <div className="w-layout-grid udesly-cards-grid udesly-3-columns">
             {/* Card 1 */}
             <ServiceCard
@@ -325,7 +325,7 @@ const Service = () => {
             />
           </div>
         </div>
-      </div>
+
     </>
   );
 };
