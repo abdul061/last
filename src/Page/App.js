@@ -5,24 +5,27 @@ import Work from "./Work";
 import Footer from "./components/Footer";
 import Service from "./Service";
 import Contact from "./Contact";
-import { Route, Routes } from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // Import your Work component
 // Import your Services component
 // Import your Contact component
 
 const App = () => {
   return (
-    <div className="app">
-      <Nav /> {/* Navigation component */}
-      <Routes>
-        <Route path="/" element={<Home />} /> {/* Home route */}
-        <Route path="/about" element={<About />} /> {/* About route */}
-        <Route path="/work" element={<Work />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Nav /> {/* Navigation component */}
+
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* Home route */}
+          <Route path="/about" element={<About />} /> {/* About route */}
+          <Route path="/work" element={<Work />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+      </Router>
   );
 };
 
