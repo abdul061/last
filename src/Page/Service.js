@@ -287,7 +287,7 @@ const Service = () => {
             />
         </div>
       </div>
-
+    </div>
     </>
   );
 };
