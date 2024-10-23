@@ -1,5 +1,5 @@
 import React from 'react';
-
+const publicUrl = process.env.REACT_APP_PUBLIC_URL
 const Service = () => {
     const ArticleCard = ({ href, imgSrc, title, description }) => (
         <a href={href} className="udesly-article-card-small w-inline-block">
@@ -30,7 +30,7 @@ const Service = () => {
               Best solution is the simplest idea!...
             </div>
             <div className="udesly-banner-buttons">
-              <a href="/contact" className="udesly-button-outlined-small w-button">More details</a>
+              <a href={`${publicUrl}/contact`} className="udesly-button-outlined-small w-button">More details</a>
               <a href="/contact" className="udesly-button-close w-inline-block">
                 <img src="assets/img/cross.svg" loading="lazy" alt="" />
               </a>
@@ -143,7 +143,7 @@ const Service = () => {
               className="udesly-stats-card"
             >
               <div className="udesly-icon-block-medium">
-                <img src="assets/img/class.jpg" loading="lazy" alt="Inspiring" />
+                <img src={`${publicUrl}/assets/img/class.jpg`} loading="lazy" alt="Inspiring" />
               </div>
               <div className="udesly-block">
                 <h5 className="udesly-udesly-text-semibold">Inspiring</h5>
@@ -156,7 +156,7 @@ const Service = () => {
               className="udesly-stats-card"
             >
               <div className="udesly-icon-block-medium">
-                <img src="assets/img/delight.jpg" loading="lazy" alt="Streamlined" />
+                <img src={`${publicUrl}/assets/img/delight.jpg`} loading="lazy" alt="Streamlined" />
               </div>
               <div className="udesly-block">
                 <h5 className="udesly-udesly-text-semibold">Streamlined</h5>
@@ -171,7 +171,7 @@ const Service = () => {
               className="udesly-stats-card"
             >
               <div className="udesly-icon-block-medium">
-                <img src="assets/img/lazy.svg" loading="lazy" alt="Inventive" />
+                <img src={`${publicUrl}/assets/img/lazy.svg`} loading="lazy" alt="Inventive" />
               </div>
               <div className="udesly-block">
                 <h5 className="udesly-udesly-text-semibold">Inventive</h5>
@@ -184,7 +184,7 @@ const Service = () => {
               className="udesly-stats-card udesly-flex-top"
             >
               <div className="udesly-icon-block-medium">
-                <img src="assets/img/location.svg" loading="lazy" alt="Clientele" />
+                <img src={`${publicUrl}/assets/img/location.svg`} loading="lazy" alt="Clientele" />
               </div>
               <div className="udesly-block">
                 <h5 className="udesly-udesly-text-semibold">Clientele</h5>
@@ -195,7 +195,7 @@ const Service = () => {
       </div>
     </div>
 
-
+    <div className="udesly-section">
       <div className="udesly-article-wrapper">
         <a
           id="w-node-b9bd4b73-78f7-8820-c414-b616e0d138c5-33987cf7"
@@ -205,7 +205,7 @@ const Service = () => {
           <div className="udesly-image-wrapper">
             <img
               className="resize-img"
-              src="assets/img/focused.jpg"
+              src={`${publicUrl}/assets/img/focused.jpg`}
               width="100"
               height="100"
               alt=""
@@ -232,7 +232,7 @@ const Service = () => {
         <div className="div-block-3">
           {/* Article Card 1 */}
           <ArticleCard
-            href="#"
+            href={`${publicUrl}/service`}
             imgSrc="assets/img/success.jpg"
             title="Workshops"
             description="Enhance your skills with our interactive and engaging workshops."
@@ -240,7 +240,7 @@ const Service = () => {
           
           {/* Article Card 2 */}
           <ArticleCard
-            href="#"
+            href={`${publicUrl}/service`}
             imgSrc="assets/img/function.jpg"
             title="Events"
             description="Network with industry leaders at our engaging tech events."
@@ -248,7 +248,7 @@ const Service = () => {
 
           {/* Article Card 3 */}
           <ArticleCard
-            href="#"
+            href={`${publicUrl}/service`}
             imgSrc="assets/img/teaching.jpg"
             title="Professional Training"
             description="Achieve your career goals with our dynamic training sessions."
@@ -262,37 +262,32 @@ const Service = () => {
         <div className="w-layout-grid udesly-cards-grid udesly-3-columns">
           {/* Card 1 */}
           <ServiceCard
-            href="#"
-            imgSrc="assets/img/web_dev.jpeg"
-            title="Web-Development"
-            description="We listen to your needs and craft websites that fulfill your vision and enhance engagement."
-          />
-
-          {/* Card 2 */}
-          <ServiceCard
-            href="#"
-            imgSrc="assets/img/app_dev.jpg"
-            title="App-Development"
-            description="We turn your app ideas into reality, focusing on user satisfaction and meeting their expectations."
-          />
-
-          {/* Card 3 */}
-          <ServiceCard
-            href="#"
-            imgSrc="assets/img/work.jpg"
-            title="Project Management"
-            description="We guide your projects from start to finish, ensuring alignment with your objectives and timely results."
-          />
-
-          {/* Card 4 */}
-          <ServiceCard
-            href="#"
-            imgSrc="assets/img/internship.jpg"
-            title="Internship Program"
-            description="We offer internships that bridge the gap between education and real-world experience, fostering future talent."
-          />
+              href={`${publicUrl}/service`}
+              imgSrc="assets/img/web_dev.jpeg"
+              title="Web-Development"
+              description="We listen to your needs and craft websites that fulfill your vision."
+            />
+            <ServiceCard
+              href={`${publicUrl}/contact`}
+              imgSrc="assets/img/app_dev.jpg"
+              title="App-Development"
+              description="We turn your app ideas into reality, focusing on user satisfaction."
+            />
+            <ServiceCard
+              href={`${publicUrl}/contact`}
+              imgSrc="assets/img/work.jpg"
+              title="Project Management"
+              description="We guide your projects from start to finish."
+            />
+            <ServiceCard
+              href={`${publicUrl}/contact`}
+              imgSrc="assets/img/internship.jpg"
+              title="Internship Program"
+              description="We offer internships that bridge the gap between education and real-world experience."
+            />
         </div>
       </div>
+    </div>
     </>
   );
 };
