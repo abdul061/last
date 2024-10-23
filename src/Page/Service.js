@@ -116,9 +116,11 @@ const Service = () => {
 
       <div className="udesly-section">
         <div className="udesly-article-wrapper">
-          <a href={`${publicUrl}/service`} 
+          <a 
+          href={`${publicUrl}/service`} 
           className="udesly-article-card w-inline-block" 
-          id="w-node-b9bd4b73-78f7-8820-c414-b616e0d138c5-33987cf7">
+          id="w-node-b9bd4b73-78f7-8820-c414-b616e0d138c5-33987cf7"
+          >
             <div className="udesly-image-wrapper">
               <img
                 className="resize-img"
@@ -136,7 +138,9 @@ const Service = () => {
             >
               <h3><strong className="bold-text">Tech-classes</strong></h3>
               <p className="paragraph-2">
-                Learn coding and technology skills through interactive classes that inspire creativity.
+                Learn coding and technology skills through interactive classes that inspire creativity, encourage collaboration, 
+                and provide real-world applications for all skill levels and engage students with hands-on projects, expert guidance, a
+                nd a supportive community of learners.
               </p>
               </div>
             </div>
