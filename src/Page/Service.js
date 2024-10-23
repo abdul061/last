@@ -255,7 +255,7 @@ const Service = () => {
           />
         </div>
       </div>
-
+     </div>
       <Banner />
 
       <div className="udesly-section">
@@ -286,7 +286,7 @@ const Service = () => {
               description="We offer internships that bridge the gap between education and real-world experience."
             />
         </div>
-      </div>
+
     </div>
     </>
   );
