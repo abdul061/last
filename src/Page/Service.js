@@ -258,7 +258,7 @@ const Service = () => {
 
       <Banner />
 
-      <div>
+      <div className='crt1'>
         <div className="w-layout-grid udesly-cards-grid udesly-3-columns">
           {/* Card 1 */}
           <ServiceCard
