@@ -195,7 +195,7 @@ const Service = () => {
       </div>
     </div>
 
-    <div className="udesly-section">
+
       <div className="udesly-article-wrapper">
         <a
           id="w-node-b9bd4b73-78f7-8820-c414-b616e0d138c5-33987cf7"
@@ -258,7 +258,7 @@ const Service = () => {
 
       <Banner />
 
-      <div className="udesly-section">
+
         <div className="w-layout-grid udesly-cards-grid udesly-3-columns">
           {/* Card 1 */}
           <ServiceCard
@@ -286,8 +286,7 @@ const Service = () => {
               description="We offer internships that bridge the gap between education and real-world experience."
             />
         </div>
-      </div>
-    </div>
+
     </>
   );
 };

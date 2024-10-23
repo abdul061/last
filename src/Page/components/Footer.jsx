@@ -32,7 +32,6 @@ function Footer() {
       );
     
   return (
-    <div>
         <div className="udesly-footer-2-columns-2">
         <div className="udesly-container-2">
             <div className="w-layout-grid udesly-grid-2-columns">
@@ -114,7 +113,7 @@ function Footer() {
             </div>
         </div>
         </div>
-    </div>
+
   )
 }
 
