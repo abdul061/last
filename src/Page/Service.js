@@ -258,7 +258,7 @@ const Service = () => {
 
       <Banner />
 
-
+      <div>
         <div className="w-layout-grid udesly-cards-grid udesly-3-columns">
           {/* Card 1 */}
           <ServiceCard
@@ -286,7 +286,7 @@ const Service = () => {
               description="We offer internships that bridge the gap between education and real-world experience."
             />
         </div>
-
+      </div>
 
     </>
   );
