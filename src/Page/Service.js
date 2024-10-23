@@ -195,7 +195,7 @@ const Service = () => {
       </div>
     </div>
 
-
+    <div className='crt1'>
       <div className="udesly-article-wrapper">
         <a
           id="w-node-b9bd4b73-78f7-8820-c414-b616e0d138c5-33987cf7"
@@ -257,7 +257,7 @@ const Service = () => {
       </div>
 
       <Banner />
-
+      </div>
       <div className='crt1'>
         <div className="w-layout-grid udesly-cards-grid udesly-3-columns">
           {/* Card 1 */}
