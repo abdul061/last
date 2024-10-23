@@ -1,5 +1,5 @@
 import React from 'react';
-
+const publicUrl = process.env.REACT_APP_PUBLIC_URL
 const Service = () => {
     const ArticleCard = ({ href, imgSrc, title, description }) => (
         <a href={href} className="udesly-article-card-small w-inline-block">
